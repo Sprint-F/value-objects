@@ -7,3 +7,8 @@
 ```shell
 vendor/bin/php-cs-fixer fix
 ```
+
+## Запуск авто-тестов
+```shell
+vendor/bin/codecept run Unit
+```
