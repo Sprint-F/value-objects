@@ -2,10 +2,10 @@
 
 namespace SprintF\Tests\Value;
 
+namespace SprintF\Tests\Type;
 use Codeception\Test\Unit;
-use SprintF\Bundle\Datetime\Value\DateTime;
 use SprintF\Tests\Support\UnitTester;
-use SprintF\ValueObjects\Value\BooleanValue;
+use SprintF\ValueObjects\Type\DateTime;
 use SprintF\ValueObjects\Value\DateTimeValue;
 
 /**

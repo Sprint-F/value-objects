@@ -12,7 +12,9 @@
     "homepage": "https://sprintf.ru",
     "require": {
         "php": "^8.3",
-        "sprintf/doctrine-datetime-bundle": "^0.3"
+        "ext-dom": "*",
+        "sprintf/doctrine-datetime-bundle": "^0.3",
+        "symfony/serializer": "^7.4"
     },
     "autoload": {
         "psr-4": {
