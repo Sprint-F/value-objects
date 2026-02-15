@@ -5,7 +5,6 @@ namespace SprintF\Tests\Value;
 use Codeception\Test\Unit;
 use SprintF\Tests\Support\UnitTester;
 use SprintF\ValueObjects\Value\DefaultValue;
-use stdClass;
 
 /**
  * @internal
@@ -24,7 +23,7 @@ class DefaultValueTest extends Unit
 
     public function testGetValue()
     {
-        foreach ([42, 3.14159, 'foo', false, true, [1, 2, 3], new stdClass()] as $v) {
+        foreach ([42, 3.14159, 'foo', false, true, [1, 2, 3], new \stdClass()] as $v) {
             $value = new DefaultValue($v);
             $this->assertSame($v, $value->getValue());
         }
