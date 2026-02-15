@@ -20,6 +20,17 @@ abstract class AbstractValue implements \Stringable
 
     public function __toString(): string
     {
-        return null === $this->getValue() ? '-' : (string) $this->value;
+        if (null === $this->getValue()) {
+            return '-';
+        }
+
+        if (false === $this->getValue()) {
+            return '-';
+        }
+        if (true === $this->getValue()) {
+            return '+';
+        }
+
+        return (string) $this->value;
     }
 }

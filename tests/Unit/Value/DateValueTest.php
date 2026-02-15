@@ -2,7 +2,6 @@
 
 namespace SprintF\Tests\Value;
 
-namespace SprintF\Tests\Type;
 use Codeception\Test\Unit;
 use SprintF\Tests\Support\UnitTester;
 use SprintF\ValueObjects\Type\Date;

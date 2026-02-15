@@ -6,7 +6,7 @@ namespace SprintF\ValueObjects\Type;
 
 /**
  * Тип "Дата".
- * Немного улучшенный стандартный \DateTime, в котором время внутри всегда 00:00:00
+ * Немного улучшенный стандартный \DateTime, в котором время внутри всегда 00:00:00.
  */
 class Date extends \DateTime implements \Stringable
 {
