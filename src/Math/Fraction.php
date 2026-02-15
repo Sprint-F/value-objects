@@ -18,7 +18,7 @@ class Fraction
      *
      * @return string строковое представление дроби, с указанным знаком разделителя
      */
-    public static function floatToFraction(float $number, int $precision = 2, string $delimiter = '/'): string
+    public static function floatToFraction(float|int $number, int $precision = 2, string $delimiter = '/'): string
     {
         [$numerator, $denominator] = self::findBestFraction($number, pow(10, $precision));
 
@@ -33,7 +33,7 @@ class Fraction
      *
      * @return array{numerator: int, denominator: int}
      */
-    private static function findBestFraction(float $number, int $precision): array
+    private static function findBestFraction(float|int $number, int $precision): array
     {
         $bestNumerator = 1;
         $bestDenominator = 1;

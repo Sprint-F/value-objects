@@ -31,6 +31,6 @@ abstract class AbstractValue implements \Stringable
             return '+';
         }
 
-        return (string) $this->value;
+        return (string) $this->getValue();
     }
 }

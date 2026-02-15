@@ -22,14 +22,14 @@ class EnumValue extends AbstractValue
 
     public function __toString(): string
     {
-        if (null === $this->value) {
+        if (null === $this->getValue()) {
             return '-';
         }
 
-        if ($this->value instanceof LabeledEnum) {
-            return $this->value->label();
+        if ($this->getValue() instanceof LabeledEnum) {
+            return $this->getValue()->label();
         }
 
-        return (string) $this->value->value;
+        return (string) $this->getValue()->value;
     }
 }

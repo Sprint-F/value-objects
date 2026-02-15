@@ -22,6 +22,6 @@ class DateValue extends AbstractValue
 
     public function __toString(): string
     {
-        return null === $this->value ? '-' : $this->value->format(Date::RUSSIAN_DATE);
+        return null === $this->getValue() ? '-' : $this->getValue()->format(Date::RUSSIAN_DATE);
     }
 }
