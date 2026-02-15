@@ -22,6 +22,12 @@ class MoneyValueTest extends Unit
         $this->assertSame('-', (string) $value);
     }
 
+    public function testInvalid()
+    {
+        $this->expectException(\TypeError::class);
+        $value = new MoneyValue('foo');
+    }
+
     public function testInteger()
     {
         $value = new MoneyValue(42);

@@ -21,6 +21,12 @@ class FractionValueTest extends Unit
         $this->assertNull($value->getValue());
     }
 
+    public function testInvalid()
+    {
+        $this->expectException(\TypeError::class);
+        $value = new FractionValue('foo');
+    }
+
     public function testInteger()
     {
         $value = new FractionValue(1);
