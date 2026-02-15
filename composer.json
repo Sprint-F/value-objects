@@ -14,8 +14,8 @@
         "php": "^8.3",
         "ext-dom": "*",
         "ext-intl": "*",
-        "sprintf/doctrine-datetime-bundle": "^0.3",
-        "symfony/serializer": "^7.4"
+        "symfony/serializer": "^7.4",
+        "symfony/property-access": "^7.4"
     },
     "autoload": {
         "psr-4": {
